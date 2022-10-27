@@ -1,0 +1,16 @@
+package model.entities;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Rent {
+	
+	private String car;
+	private Date retirada;
+	private Date retorno;
+	
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	
+	
+
+}

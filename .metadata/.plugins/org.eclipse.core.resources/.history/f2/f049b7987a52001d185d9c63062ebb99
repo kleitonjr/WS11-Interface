@@ -1,0 +1,25 @@
+package model.services;
+
+import model.entities.Invoice;
+import model.entities.CarRent;
+
+public class RentService{
+	
+	private Double perDay;
+	private Double perHour;
+	
+	private BrazilTaxService taxService;
+
+	public RentService(Double perDay, Double perHour, BrazilTaxService taxService) {
+		this.perDay = perDay;
+		this.perHour = perHour;
+		this.taxService = taxService;
+	}
+	
+	public void processInvoice(CarRent rent) {
+		rent.setInvoice(new Invoice(10.0, 50.0));
+		
+	}
+
+
+}

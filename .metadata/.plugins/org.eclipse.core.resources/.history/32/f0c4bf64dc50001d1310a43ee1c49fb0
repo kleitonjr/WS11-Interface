@@ -1,0 +1,23 @@
+package model.services;
+
+import model.entities.Rent;
+
+public class RentServices extends BrazilTaxServices {
+	
+	private Double perDay;
+	private Double perHour;
+	
+	private BrazilTaxServices taxService;
+
+	public RentServices(Double perDay, Double perHour, BrazilTaxServices taxService) {
+		this.perDay = perDay;
+		this.perHour = perHour;
+		this.taxService = taxService;
+	}
+	
+	public void processInvoice(Rent rent) {
+		
+	}
+
+
+}
