@@ -1,31 +1,33 @@
 package model.entities;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Contract {
 	
-	private Integer numCont;
-	private Date data;
+	private Integer num;
+	private LocalDate data;
 	private Double valTotal;
 	
-	public Contract() {
-	}
-	public Contract(Integer numCont, Date data, Double valTotal) {
-		this.numCont = numCont;
+	private List<Installment> installments = new ArrayList<>();
+
+	public Contract(Integer num, LocalDate data, Double valTotal) {
+		this.num = num;
 		this.data = data;
 		this.valTotal = valTotal;
 	}
-	
-	public Integer getNumCont() {
-		return numCont;
+
+	public Integer getNum() {
+		return num;
 	}
-	public void setNumCont(Integer numCont) {
-		this.numCont = numCont;
+	public void setNum(Integer num) {
+		this.num = num;
 	}
-	public Date getData() {
+	public LocalDate getData() {
 		return data;
 	}
-	public void setData(Date data) {
+	public void setData(LocalDate data) {
 		this.data = data;
 	}
 	public Double getValTotal() {
@@ -34,6 +36,9 @@ public class Contract {
 	public void setValTotal(Double valTotal) {
 		this.valTotal = valTotal;
 	}
-	
+	public List<Installment> getInstallments() {
+		return installments;
+	}
 
+	
 }

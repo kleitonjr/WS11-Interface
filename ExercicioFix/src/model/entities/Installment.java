@@ -1,31 +1,37 @@
 package model.entities;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Installment {
 	
-	private Date dtaVenc;
+	private static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		
+	private LocalDate dtaVenc;
 	private Double amount;
 	
-	public Installment(Date dtaVenc, Double amount) {
+	public Installment(LocalDate dtaVenc, Double amount) {
 		this.dtaVenc = dtaVenc;
 		this.amount = amount;
 	}
 
-	public Date getDtaVenc() {
+	public LocalDate getDtaVenc() {
 		return dtaVenc;
 	}
-
-	public void setDtaVenc(Date dtaVenc) {
+	public void setDtaVenc(LocalDate dtaVenc) {
 		this.dtaVenc = dtaVenc;
 	}
-
 	public Double getAmount() {
 		return amount;
 	}
-
 	public void setAmount(Double amount) {
 		this.amount = amount;
 	}
+	
+	public String toString() {
+		return getDtaVenc().format(fmt) + " - " + String.format("%.2f", getAmount());
+		
+	}
+	
 	
 }
