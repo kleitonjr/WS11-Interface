@@ -11,8 +11,8 @@
     <fullyQualifiedTypeName name="model.services.BrazilTaxService"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.time.Duration"/>
-    <fullyQualifiedTypeName name="model.entities.Contract"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="model.entities.Installment"/>
     <fullyQualifiedTypeName name="model.services.OnlinePaymentService"/>
+    <fullyQualifiedTypeName name="model.entities.Contract"/>
 </qualifiedTypeNameHistroy>
