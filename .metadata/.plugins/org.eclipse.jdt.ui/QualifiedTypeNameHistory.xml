@@ -15,4 +15,5 @@
     <fullyQualifiedTypeName name="model.entities.Installment"/>
     <fullyQualifiedTypeName name="model.services.OnlinePaymentService"/>
     <fullyQualifiedTypeName name="model.entities.Contract"/>
+    <fullyQualifiedTypeName name="services.UsaInterestService"/>
 </qualifiedTypeNameHistroy>
