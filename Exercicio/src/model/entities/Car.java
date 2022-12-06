@@ -4,8 +4,6 @@ public class Car {
 	
 	private String model;
 
-	public Car() {
-	}
 	public Car(String model) {
 		this.model = model;
 	}

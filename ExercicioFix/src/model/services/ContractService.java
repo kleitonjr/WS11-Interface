@@ -26,7 +26,6 @@ public class ContractService {
 			
 			cont.getInstallments().add(new Installment(dtaVenc, quota));
 		
-		
 		}
 			
 	}

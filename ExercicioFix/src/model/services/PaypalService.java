@@ -12,9 +12,4 @@ public class PaypalService implements OnlinePaymentService{
 		return amount * 0.01 * months;
 	}
 	
-	
-
-	
-	
-	
 }

@@ -13,7 +13,7 @@ public class Program {
 	public static void main(String[] args) {
 
 	List<Employee> list = new ArrayList<>();
-	String path = "C:\\temp\\in.txt";
+	String path = "C:\\temp\\ini.txt";
 	
 	try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 	
@@ -29,8 +29,9 @@ public class Program {
 			
 		}
 	}
-	catch(IOException e)
-	{
+	catch(IOException e){
+		System.out.println("Error: " + e.getMessage());
+	}catch(NumberFormatException e) {
 		System.out.println("Error: " + e.getMessage());
 	}
 	
