@@ -13,7 +13,7 @@ public class Program {
 	public static void main(String[] args) {
 
 	List<Employee> list = new ArrayList<>();
-	String path = "C:\\temp\\ini.txt";
+	String path = "C:\\temp\\in.txt";
 	
 	try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 	
