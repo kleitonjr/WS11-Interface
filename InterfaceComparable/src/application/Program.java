@@ -31,7 +31,8 @@ public class Program {
 	}
 	catch(IOException e){
 		System.out.println("Error: " + e.getMessage());
-	}catch(NumberFormatException e) {
+	}
+	catch(NumberFormatException e) {
 		System.out.println("Error: " + e.getMessage());
 	}
 	

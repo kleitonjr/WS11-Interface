@@ -23,13 +23,16 @@ public class Employee implements Comparable<Employee>{
 		this.salary = salary;
 	}
 
+	//ORDENAR A LISTA DE FUNCIONARIOS POR NOME	
 /*	@Override
-	public int compareTo(Employee o) {
-		return name.compareTo(o.getName());
+	public int compareTo(Employee other) {
+		return name.compareTo(other.getName());
 	}
 */	
+	//ORDENAR POR ORDEM DESC DE SALARIO
 	@Override
 	public int compareTo(Employee a) {
 		return -salary.compareTo(a.getSalary());
 	}
+	
 }
